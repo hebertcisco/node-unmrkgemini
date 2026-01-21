@@ -1,11 +1,11 @@
-name: 🚀 Node.js build and publish package
+name: 🚀 Node.js publish package
 
 on:
   release:
     types: [created]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-24.04
     steps:
       - name: 📥 Checkout repository
@@ -13,14 +13,14 @@ jobs:
       - name: 🔧 Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 22
+          node-version: 24
       - name: 📦 Install dependencies
         run: npm i
       - name: 🧪 Run tests
         run: npm test
 
   publish-npm:
-    needs: build
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: 📥 Checkout repository
@@ -28,12 +28,10 @@ jobs:
       - name: 🔧 Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 22
+          node-version: 24
           registry-url: https://registry.npmjs.org/
       - name: 📦 Install dependencies
         run: npm i
-      - name: 🛠️ Build package
-        run: npm run build
       - name: 📤 Publish package
         run: npm publish
         env:
