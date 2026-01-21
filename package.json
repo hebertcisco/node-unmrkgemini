@@ -18,6 +18,14 @@
   ],
   "author": "hebertcisco",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hebertcisco/node-unmrkgemini.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hebertcisco/node-unmrkgemini/issues"
+  },
+  "homepage": "https://unmrkgemini.online/",
   "dependencies": {
     "sharp": "^0.34.5",
     "yargs": "^18.0.0"
