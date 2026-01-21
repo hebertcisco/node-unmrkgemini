@@ -1,6 +1,6 @@
 <!-- Banner -->
 <div align="center">
-  <img src=".github/static/img/banner-dark.png" alt="unmrkgemini banner" width="100%">
+  <img src="https://raw.githubusercontent.com/hebertcisco/node-unmrkgemini/main/.github/static/img/banner-dark.png" alt="unmrkgemini banner" width="100%">
   <h1>unmrkgemini</h1>
   <p><strong>A powerful Node.js library to add and remove Gemini-style watermarks from images</strong></p>
   
