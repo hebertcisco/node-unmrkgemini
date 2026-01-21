@@ -45,10 +45,16 @@ unmrkgemini is a powerful, high-performance image processing library for Node.js
 
 ## 📦 Installation
 
-Install unmrkgemini from npm:
+Install unmrkgemini from npm. To use it as a library in your project, install it locally:
 
 ```bash
 npm install unmrkgemini
+```
+
+To use the command-line tool from anywhere on your system, install it globally:
+
+```bash
+npm install -g unmrkgemini
 ```
 
 ---
